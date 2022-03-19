@@ -10,7 +10,8 @@ body {
 
 .App {
   width: 100%;
-  background-color: #daa4a4;
+  background-color: #fff;
+  padding-bottom: 50px;
 }
 
 .App .search {
@@ -50,44 +51,5 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #d1d1d1;
-}
-
-.App .videoDisplay {
-  margin: 0 auto;
-  margin-top: 40px;
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.App .videoDisplay__img {
-  width: 50%;
-  background-color: #fff;
-}
-
-.App .videoDisplay__context {
-  width: 50%;
-  background-color: #8f4949;
-}
-
-.App .videoDisplay__context h1 {
-  margin-bottom: 0;
-}
-
-.App .videoDisplay__context__detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.App .videoDisplay__channel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px 0;
 }
 /*# sourceMappingURL=index.css.map */

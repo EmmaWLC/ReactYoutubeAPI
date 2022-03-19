@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +10,8 @@ body {
 
 .App{
     width: 100%;
-    background-color: rgb(218, 164, 164);
+    background-color: #fff;
+    padding-bottom: 50px;
 
     .search{
         margin: 0 auto;
@@ -39,37 +41,5 @@ body {
         }
 
     }
-    .videoDisplay{
-        margin: 0 auto;
-        margin-top: 40px;
-        width: 60%;
-        display: flex;
-        justify-content: center;
-
-        &__img{
-            width: 50%;
-            background-color: #fff;
-        }
-
-        &__context{
-            width: 50%;
-            background-color: rgb(143, 73, 73);
-            h1{
-                margin-bottom: 0;
-            }
-
-            &__detail{
-                display: flex;
-
-            }
-
-
-        }
-
-        &__channel{
-            display: flex;
-            margin: 20px 0;
-        }
-
-    }
+   
 }
