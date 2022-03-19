@@ -19,7 +19,7 @@ function VideoDisplay({ imgUrl, title, publishedAt, channelTitle, description, c
           <div className="videoDisplay__context__detail__review">
             觀看次數：{chnlViewCounts}次
           </div>
-          <div className="videoDisplay__context__detail__time">{publishedAt}小時前</div>
+          <div className="videoDisplay__context__detail__time">{publishedAt}</div>
         </div>
         <div className="videoDisplay__channel">
           <div className="videoDisplay__channel__img">
