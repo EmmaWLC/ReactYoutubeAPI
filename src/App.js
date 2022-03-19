@@ -14,7 +14,7 @@ function App() {
     let channelId = [];
     let videoId = [];
 
-    let res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${inputValue}&key=AIzaSyDP-lkwkmmSAoOHCXzjDaRtTTDe47xv2qE&type=video&maxResults=4`)
+    let res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${inputValue}&key={your key}&type=video&maxResults=4`)
 
 
   //   let res = {
@@ -231,7 +231,7 @@ function App() {
     
     for (let i = 0; i < channelId.length; i++){
       let chnlRes = await axios.get(`https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${channelId[i]}&fields=items(id%2Csnippet%2Fthumbnails)&key=
-      AIzaSyDP-lkwkmmSAoOHCXzjDaRtTTDe47xv2qE`);
+      {your key}`);
       
       let chnlItems = chnlRes.data.items;
       //console.log(chnlItems);
@@ -239,7 +239,7 @@ function App() {
     }
     for (let i = 0; i < videoId.length; i++){
       let chnlViewRes = await axios.get(` https://www.googleapis.com/youtube/v3/videos?part=contentDetails,statistics&id=${videoId[i]}&key=
-      AIzaSyDP-lkwkmmSAoOHCXzjDaRtTTDe47xv2qE`);
+      {your key}`);
       
       let chnlItems = chnlViewRes.data.items;
       // console.log(chnlItems);
